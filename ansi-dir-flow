@@ -1,0 +1,33 @@
+my-ansible-project/
+├── inventory.ini
+├── playbook.yaml
+└── roles/
+    └── apache/
+        ├── tasks/
+        │   └── main.yaml
+        ├── handlers/
+        │   └── main.yaml
+        └── vars/
+            └── main.yaml
+
+
+
+# Create the main project directory
+mkdir -p my-ansible-project
+
+# Navigate to the project directory
+cd my-ansible-project
+
+# Create the inventory file
+touch inventory.ini
+
+# Create the playbook file
+touch playbook.yaml
+
+# Create the roles directory and subdirectories
+mkdir -p roles/apache/tasks roles/apache/handlers roles/apache/vars
+
+# Create the files in the respective directories
+touch roles/apache/tasks/main.yaml
+touch roles/apache/handlers/main.yaml
+touch roles/apache/vars/main.yaml
